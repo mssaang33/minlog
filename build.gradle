@@ -36,7 +36,7 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-cache'
     implementation 'org.springframework.boot:spring-boot-starter-validation'
 
-
+    // querydsl
     implementation "com.querydsl:querydsl-jpa:${queryDslVersion}"
     implementation "com.querydsl:querydsl-apt:${queryDslVersion}"
 
@@ -73,7 +73,7 @@ tasks.named('test') {
     useJUnitPlatform()
 }
 
-//이놈
+//querydsl
 def querydslDir = "$buildDir/generated/querydsl"
 
 querydsl {
