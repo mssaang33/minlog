@@ -29,9 +29,6 @@ dependencies {
     // spring dependencies
     implementation 'org.springframework.boot:spring-boot-starter-web'
     implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
-    implementation 'org.springframework.boot:spring-boot-starter-security'
-    implementation 'org.springframework.boot:spring-boot-starter-oauth2-client'
-    implementation 'org.springframework.security:spring-security-acl'
     implementation 'org.springframework.boot:spring-boot-starter-aop'
     implementation 'org.springframework.boot:spring-boot-starter-cache'
     implementation 'org.springframework.boot:spring-boot-starter-validation'
@@ -54,7 +51,7 @@ dependencies {
     implementation 'org.webjars:stomp-websocket:2.3.3-1'
 
     // utility
-    implementation 'org.modelmapper:modelmapper:3.1.0'
+//    implementation 'org.modelmapper:modelmapper:3.1.0'
 
     //  jwt
     implementation 'io.jsonwebtoken:jjwt-api:0.11.2'
@@ -62,10 +59,8 @@ dependencies {
     runtimeOnly'io.jsonwebtoken:jjwt-jackson:0.11.2'
 
 
-
     // test
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
-    testImplementation 'org.springframework.security:spring-security-test'
 }
 
 
