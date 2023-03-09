@@ -1,5 +1,6 @@
 package com.min.log;
 
+import com.min.log.Post.entity.PostEntity;
 import com.min.log.user.entity.UserEntity;
 import com.min.log.user.repository.UserRepository;
 import org.junit.jupiter.api.DisplayName;
@@ -15,7 +16,7 @@ class MinlogApplicationTests {
 
 
     @Test
-    @DisplayName("유저입력테스트")
+    @DisplayName("유저 입력 테스트")
     void userAdd(){
         UserEntity user = new UserEntity();
         user.setUser_id("test");
@@ -24,6 +25,12 @@ class MinlogApplicationTests {
         user.setName("테스트");
 
         this.userRepository.save(user);
+    }
+
+    @Test
+    @DisplayName("포스트 입력 테스트")
+    void postAdd(){
+        PostEntity post = new PostEntity();
     }
 
 
